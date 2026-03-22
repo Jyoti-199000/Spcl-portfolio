@@ -237,6 +237,52 @@ position:relative;
 }
 
 /* ===== HERO ===== */
+/* ================= MOBILE HERO FIX ================= */
+
+@media (max-width: 768px) {
+
+.hero {
+    min-height: auto !important;
+    padding-top: 110px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    text-align: center;
+}
+
+.hero-content {
+    order: 1;
+}
+
+.hero-image {
+    order: 2;
+    margin-top: 10px;
+}
+
+.hero-image img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    font-size: 32px !important;
+    line-height: 1.2;
+}
+
+.hero h2 {
+    font-size: 22px;
+}
+
+.hero p {
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
+}
 .hero{
 min-height:100vh;
 display:flex;
